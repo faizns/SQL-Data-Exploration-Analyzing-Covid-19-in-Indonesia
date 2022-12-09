@@ -43,7 +43,7 @@ ORDER BY 1, 2
 ```
 <p align="center">
 	<kbd><img src="asset/deathrate_indo.png" width=600px> </kbd> <br>
-	Gambar 2 — Kematian di Indonesia akibat Covid-19 mulai terjadi pada hari ke-10 setelah kasus pertama dimulai.
+	Gambar 2 — Kematian akibat Covid-19 di Indonesia mulai terjadi pada hari ke-10 setelah kasus pertama dimulai.
 </p> <br>
 
 **3. Indonesia - Total Cases, Total Deaths, & Death Rate by Year**
@@ -64,13 +64,14 @@ ORDER BY 1
 ```
 <p align="center">
 	<kbd><img src="asset/deathrate_indo_year.png" width=600px> </kbd> <br>
-	Gambar 3 — .
+	Gambar 3 — Secara keseluruhan Death Rate tertinggi di Indonesia terjadi pada tahun 2021, sedangkan terendah pada tahun 2022.
 </p> <br>
 
 ### Infection Rate per Population by Country & Date
 **4. Worldwide - Infection Rate per Population by Country & Date**
 ```
-SELECT location, 
+SELECT 
+	location, 
 	date, 
 	population, 
 	total_cases,
@@ -86,7 +87,8 @@ ORDER BY 1, 2
 
 **5. Indonesia - Infection Rate per Population by Country & Date**
 ```
-SELECT location, 
+SELECT 
+	location, 
 	date, 
 	population, 
 	total_cases,
@@ -118,5 +120,5 @@ ORDER BY 1
 ```
 <p align="center">
 	<kbd><img src="asset/infectionr_year.png" width=600px> </kbd> <br>
-	Gambar 6 —  .
+	Gambar 6 — Secara keseluruhan Infection Rate tertinggi di Indonesia juga terjadi pada tahun 2021. Hal yang menarik dari perbandingan analisis Infection Rate vs Death Rate adalah nilai Infection Rate terkecil tidak terjadi pada tahun 2022. Pada tahun tersebut nilai Infection Rate cukup sedang namun memiliki nilai Death Rate yang kecil, hal itu diduga dapat terjadi karena adanya vaksinasi sehingga dapat menekan angka kematian akibat Covid-19 meskipun Infection Ratenya tinggi.
 </p> <br>
